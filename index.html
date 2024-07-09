@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>MyPorto</span>folio</a>
+        <nav class="navbar">
+           <a href="index.html" class="active">Home</a>
+           <a href="about.html">About me</a>
+           <a href="skill.html">Skill</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact me</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="dropdown_menu">
+           <a href="index.html" class="active">Home</a>
+           <a href="about.html">About me</a>
+           <a href="skill.html">Skill</a>
+        </nav>
+        
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hallo!</h3>
+            <h1>Saya <span>Aulia</span></h1>
+            <p>Seorang Pelajar Web Developer & UI/UX Designer</p>
+
+            <div class="btn-box">
+                <a href="about.html" class="btn">About me</a>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="foto1.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>me</span></h2>
+            <p>Nama saya <span>Aulia Laily Ramadhani</span> biasa dipanggil <span>Aul</span>. Saya seorang pelajar SMK Negeri 1 Kepanjen. Saya mulai mempelajari Web sejak menginjak kelas 10,
+            saya mempelajarinya bersama teman sekelas saya diwaktu jam mapel Web. Selain itu saya sangat menyukai bidang mendesain.
+            <br>Saya mulai mendesain di Aplikasi seperti Corel,Figma,Adobe,Canva dan lainnya.<br>Bakat tersebut saya kembangkan hingga saat ini.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill">
+        <h2 class="heading"><span>Ski</span>ll</h2>
+        <div class="container">   
+        <img src="foto2.png" alt="">
+            <div class="skill-content">
+            <h3>Coding</h3>
+            <p>Skill Coding saya masih ditahap Pemula (Front end Developer). 
+            dan sekarang saya juga masih mempelajari bahasa Pemograman PHP dan JavaScript</p>
+            </div>
+        </div>
+        <div class="container">   
+            <img src="ft3.png" alt="">
+                <div class="skill-content">
+                <h3>Desain</h3>
+                <p>Saya belajar mendesain di Corel 10,Adobe Ilustrator & Figma. 
+                Ada Beberapa project desain yang sudah saya menciptakan pada web maupun produk</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact-me">
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="clearForm()">
+            <h2 class="heading">Contact <span>me</span></h2>
+
+            <input type="text" name="nm" placeholder="Nama Lengkap" required >
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phn" placeholder="No.telp" required>
+            <textarea name="msg" rows="3" placeholder="Pesan Anda"></textarea>
+
+            <input type="hidden" name="access_key" value="a569f46d-b44e-4904-9e05-ab1a0f1f4d53">
+            <button type="submit">Kirim</button>
+
+        </form>
+        <script>
+            function clearForm() {
+                
+                document.querySelector('input[name="nm"]').value = '';
+                document.querySelector('input[name="email"]').value = '';
+                document.querySelector('input[name="phn"]').value = '';
+                document.querySelector('textarea[name="msg"]').value = '';
+            }
+        </script>
+    
+    </section>
+    
+    <footer>
+            <div class="footer-content">
+                <h3>Contact me</h3>
+                <p>Email : aulialaily2309@gmail.com</p>
+                <p>No.telp : 083851909537</p>
+                <p>Alamat : Malang,Jawa Timur,Indonesia</p>
+            </div>
+            <div class="footer-content">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow me </h3>
+                <div class="links">
+                    <a href="https://www.facebook.com/profile.php?id=61562185223591" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/la912_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="lg">
+                <a href="#" class="logo"><span>MyPorto</span>folio</a>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy;2024 Aulia Desain | All rights reserved</p>
+            </div>
+    </footer>
+    <!--Java Script-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

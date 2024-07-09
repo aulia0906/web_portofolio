@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <title>Skill</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>MyPorto</span>folio</a>
+        <nav class="navbar">
+           <a href="index.html" class="active">Home</a>
+           <a href="about.html">About me</a>
+           <a href="skill.html">Skill</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact me</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="dropdown_menu">
+           <a href="index.html" class="active">Home</a>
+           <a href="about.html">About me</a>
+           <a href="skill.html">Skill</a>
+        </nav>
+        
+    </header>
+
+    <section class="skill">
+        <h2 class="heading"><span>Ski</span>ll</h2>
+        <div class="container">   
+        <img src="foto2.png" alt="">
+            <div class="skill-content">
+            <h3>Coding</h3>
+            <p>Skill Coding saya masih ditahap frontend Developer. 
+            dan sekarang saya juga masih mempelajari PHP native dan JavaScript</p>
+            </div>
+        </div>
+        <div class="container">   
+            <img src="ft3.png" alt="">
+                <div class="skill-content">
+                <h3>Desain</h3>
+                <p>Saya belajar mendesain di Corel 10,Adobe Ilustrator & Figma. 
+                Untuk menciptakan desain pada web maupun produk</p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact me</h3>
+            <p>Email : aulialaily2309@gmail.com</p>
+            <p>No.telp : 083851909537</p>
+            <p>Alamat : Malang,Jawa Timur,Indonesia</p>
+        </div>
+        <div class="footer-content">
+            <h3>Link</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow me </h3>
+            <div class="links">
+                <a href="https://www.facebook.com/profile.php?id=61562185223591" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/la912_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="lg">
+            <a href="#" class="logo"><span>MyPorto</span>folio</a>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;2024 Aulia Desain | All rights reserved</p>
+        </div>
+</footer>
+<!--Java Script-->
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+</body>
+</html>
